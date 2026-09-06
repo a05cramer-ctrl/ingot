@@ -9,6 +9,11 @@
 <meta property="og:title" content="ingot — paired with gold">
 <meta property="og:description" content="The fees come back as metal.">
 <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@IngotOnRH">
+<meta name="twitter:creator" content="@IngotOnRH">
+<meta name="twitter:title" content="ingot — paired with gold">
+<meta name="twitter:description" content="The fees come back as metal.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -183,6 +188,9 @@ h1 em{font-style:italic;color:var(--gold)}
 }
 .btn:hover{color:#141414;background:var(--gold);border-color:var(--gold)}
 .btn.g{border-color:#3d3423;color:var(--gold)}
+.btn.x{display:inline-flex;align-items:center;gap:9px}
+.btn.x svg{width:11px;height:11px;fill:currentColor;display:block;transition:transform .5s var(--ease)}
+.btn.x:hover svg{transform:rotate(-8deg) scale(1.1)}
 .hero .ingotart{
   margin-top:56px;height:1px;background:linear-gradient(90deg,var(--rule),#3d3423 45%,var(--rule));
 }
@@ -349,6 +357,8 @@ footer{border-top:1px solid var(--rule);padding:40px 0 54px}
 .flinks{display:flex;gap:22px;flex-wrap:wrap}
 .flinks a,.fmeta{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--mute);transition:color .35s ease}
 .flinks a:hover{color:var(--gold)}
+.flinks a.xf{display:inline-flex;align-items:center;gap:7px}
+.flinks a.xf svg{width:10px;height:10px;fill:currentColor;display:block}
 .disclaim{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:#4a463f;line-height:1.8;max-width:64ch}
 @media(min-width:760px){
   .fgrid{flex-direction:row;justify-content:space-between;align-items:flex-start}
@@ -397,6 +407,10 @@ footer{border-top:1px solid var(--rule);padding:40px 0 54px}
       <div class="cta">
         <a class="btn g" href="#activity">see the routings</a>
         <a class="btn" href="#route">how the route works</a>
+        <a class="btn x" id="xCta" href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.22-6.82-5.96 6.82H1.68l7.73-8.83L1.25 2.25h6.82l4.71 6.23 5.46-6.23Zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64Z"/></svg>
+          follow on x
+        </a>
       </div>
       <div class="ingotart rvline"></div>
     </div>
@@ -614,7 +628,10 @@ footer{border-top:1px solid var(--rule);padding:40px 0 54px}
         <div class="disclaim" style="margin-top:14px">paired with gold. the fees come back as metal.</div>
       </div>
       <div class="flinks" id="flinks">
-        <a href="#" id="xLink" target="_blank" rel="noopener noreferrer">x</a>
+        <a class="xf" href="#" id="xLink" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.22-6.82-5.96 6.82H1.68l7.73-8.83L1.25 2.25h6.82l4.71 6.23 5.46-6.23Zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64Z"/></svg>
+          <span id="xHandle">x</span>
+        </a>
         <a href="#" id="mailLink">contact</a>
         <a href="https://docs.pons.fun" target="_blank" rel="noopener noreferrer">pons docs</a>
         <a href="https://www.spdrgoldshares.com" target="_blank" rel="noopener noreferrer">gld</a>
@@ -635,7 +652,7 @@ footer{border-top:1px solid var(--rule);padding:40px 0 54px}
 const CFG = { coinApi:"", gldApi:"", feeWallet:"", explorer:"https://robinhoodchain.blockscout.com" };
 
 /* page metadata — contract address, socials, contact */
-const META = { ca:"", x:"", contact:"" };
+const META = { ca:"", x:"https://x.com/IngotOnRH", contact:"" };
 
 /* Public gold reference feeds. Used ONLY while CFG.gldApi is empty, and every
    figure they produce is labelled on the page with the feed it came from.
@@ -798,7 +815,15 @@ async function jget(url){
     pill.title = "contract address not published yet";
   }
 
-  if (META.x) $("xLink").href = META.x; else $("xLink").remove();
+  if (META.x){
+    const handle = "@" + META.x.replace(/\/+$/, "").split("/").pop();
+    $("xLink").href = META.x;
+    $("xHandle").textContent = handle;
+    $("xCta").href = META.x;
+  } else {
+    $("xLink").remove();
+    $("xCta").remove();
+  }
   if (META.contact) $("mailLink").href = "mailto:" + META.contact; else $("mailLink").remove();
 
   if (CFG.explorer && CFG.feeWallet){
