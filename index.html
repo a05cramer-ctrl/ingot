@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ingot — paired with gold</title>
+<meta name="description" content="ingot. Creator fees from trading route back to holders in $GLD. Every routing is an onchain transaction.">
+<meta name="theme-color" content="#141414">
+<meta property="og:title" content="ingot — paired with gold">
+<meta property="og:description" content="The fees come back as metal.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="icon180.png">
+<meta property="og:image" content="ingot.png">
+
+<style>
+:root{
+  --bg:#141414;
+  --ink:#EDEAE3;
+  --gold:#D4A423;
+  --rule:#2A2A2A;
+  --mute:#7E7A72;
+  --row:#191919;
+  --serif:"EB Garamond",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --pad:22px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+section[id],main[id]{scroll-margin-top:84px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  background:radial-gradient(120% 80% at 50% -10%,rgba(212,164,35,.055),transparent 60%);
+}
+::selection{background:var(--gold);color:#141414}
+
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p{margin:0}
+
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1,"zero" 1}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1,"zero" 1;color:var(--gold);letter-spacing:-.01em}
+.neg{color:var(--mute)}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 var(--pad);position:relative;z-index:1}
+.rule{height:1px;background:var(--rule);border:0;margin:0}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:40;
+  background:rgba(20,20,20,.72);
+  backdrop-filter:saturate(140%) blur(14px);
+  -webkit-backdrop-filter:saturate(140%) blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .5s ease,background .5s ease;
+}
+header.stuck{border-bottom-color:var(--rule);background:rgba(20,20,20,.92)}
+#prog{position:absolute;left:0;bottom:-1px;height:1px;width:0;background:var(--gold);opacity:.85;z-index:2}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.mark{font-family:var(--serif);font-size:23px;letter-spacing:.005em;line-height:1;display:flex;align-items:center;gap:9px}
+.mark i{
+  width:15px;height:9px;display:block;
+  background:var(--gold);
+  clip-path:polygon(17% 0,83% 0,100% 100%,0 100%);
+  transform:translateY(-1px);
+  transition:transform .6s var(--ease);
+}
+.mark:hover i{transform:translateY(-1px) rotate(-4deg)}
+nav{display:none;gap:26px;align-items:center}
+nav a{
+  font-family:var(--mono);font-size:11px;font-weight:400;
+  letter-spacing:.12em;text-transform:lowercase;color:var(--mute);
+  position:relative;padding:3px 0;transition:color .35s ease;
+}
+nav a::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:var(--gold);transform:scaleX(0);transform-origin:right;
+  transition:transform .45s var(--ease);
+}
+nav a:hover{color:var(--ink)}
+nav a:hover::after{transform:scaleX(1);transform-origin:left}
+
+.pill{
+  display:inline-flex;align-items:center;gap:9px;
+  border:1px solid var(--rule);border-radius:999px;
+  padding:6px 12px;background:transparent;color:var(--mute);
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;
+  cursor:pointer;white-space:nowrap;
+  transition:border-color .4s ease,color .4s ease,background .4s ease;
+}
+.pill:hover{border-color:#3d3423;color:var(--ink)}
+.pill.ok{border-color:var(--gold);color:var(--gold)}
+.pill[disabled]{cursor:default;opacity:.55}
+.pill b{font-weight:400;color:#5c5850;letter-spacing:.14em}
+.pill.ok b{color:var(--gold)}
+
+@media(min-width:860px){
+  nav{display:flex}
+  .bar{height:76px}
+}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(14px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rvline{transform:scaleX(0);transform-origin:left;transition:transform 1.2s var(--ease)}
+.rvline.in{transform:scaleX(1)}
+
+/* ---------- section chrome ---------- */
+section{padding:64px 0;position:relative;z-index:1}
+.eyebrow{
+  display:flex;align-items:baseline;gap:14px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--mute);margin-bottom:26px;
+}
+.eyebrow span:first-child{color:#4a463f}
+h2{font-family:var(--serif);font-weight:400;font-size:31px;line-height:1.18;letter-spacing:-.005em}
+.lede{color:#b8b2a7;max-width:60ch;font-size:16.5px}
+.lede a{color:var(--ink);border-bottom:1px solid #3d3423;padding-bottom:1px;transition:border-color .35s ease,color .35s ease}
+.lede a:hover{border-bottom-color:var(--gold);color:var(--gold)}
+@media(min-width:760px){
+  section{padding:104px 0}
+  h2{font-size:38px}
+}
+
+/* ---------- 01 hero ---------- */
+.hero{padding:76px 0 62px}
+.hero .kicker{
+  font-family:var(--mono);font-size:10px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--mute);margin-bottom:34px;
+  display:flex;align-items:center;gap:11px;
+}
+.hero .kicker em{
+  font-style:normal;width:5px;height:5px;border-radius:50%;
+  background:var(--gold);display:inline-block;
+  animation:pulse 3.6s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
+h1{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(40px,12.4vw,96px);
+  line-height:1.02;letter-spacing:-.022em;
+}
+h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+h1 .ln>span{display:block;transform:translateY(112%);transition:transform 1.25s var(--ease)}
+.ready h1 .ln>span{transform:none}
+.ready h1 .ln:nth-child(2)>span{transition-delay:.13s}
+h1 em{font-style:italic;color:var(--gold)}
+.hero .sub{
+  margin-top:32px;max-width:52ch;color:#b8b2a7;font-size:17px;
+  opacity:0;transform:translateY(10px);
+  transition:opacity 1.1s var(--ease) .5s,transform 1.1s var(--ease) .5s;
+}
+.ready .hero .sub{opacity:1;transform:none}
+.hero .cta{
+  display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;
+  opacity:0;transition:opacity 1.1s ease .78s;
+}
+.ready .hero .cta{opacity:1}
+.btn{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;padding:12px 20px;
+  border:1px solid var(--rule);color:var(--mute);
+  transition:color .4s ease,border-color .4s ease,background .4s ease;
+}
+.btn:hover{color:#141414;background:var(--gold);border-color:var(--gold)}
+.btn.g{border-color:#3d3423;color:var(--gold)}
+.hero .ingotart{
+  margin-top:56px;height:1px;background:linear-gradient(90deg,var(--rule),#3d3423 45%,var(--rule));
+}
+@media(min-width:760px){.hero{padding:118px 0 96px}}
+
+/* ---------- 02 live strip ---------- */
+.strip{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  border-top:1px solid var(--rule);border-left:1px solid var(--rule);
+}
+.cell{
+  border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding:20px 16px 17px;min-height:112px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  position:relative;overflow:hidden;
+}
+.cell::after{
+  content:"";position:absolute;left:0;top:0;height:1px;width:100%;
+  background:var(--gold);transform:scaleX(0);transform-origin:left;
+  transition:transform .8s var(--ease);
+}
+.cell:hover::after{transform:scaleX(1)}
+.cell .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.cell .v{
+  font-family:var(--mono);font-variant-numeric:tabular-nums;
+  font-size:clamp(21px,6.4vw,29px);font-weight:400;
+  color:var(--gold);letter-spacing:-.02em;line-height:1;margin:14px 0 10px;
+}
+.cell .v.neg{color:var(--mute)}
+.cell .s{font-family:var(--mono);font-size:10px;letter-spacing:.05em;color:#57534c;line-height:1.4}
+@media(min-width:760px){
+  .strip{grid-template-columns:repeat(4,1fr)}
+  .cell{padding:26px 20px 22px;min-height:142px}
+}
+
+/* ---------- 03 route ---------- */
+.diagram{margin:44px 0 40px;display:flex;flex-direction:column;align-items:stretch}
+.node{
+  border:1px solid var(--rule);padding:20px 18px;background:#171717;
+  position:relative;transition:border-color .6s ease,background .6s ease;
+}
+.node:hover{border-color:#3d3423;background:#1a1a1a}
+.node .n{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+.node .t{font-family:var(--serif);font-size:23px;margin-top:9px;line-height:1.22}
+.node .d{font-family:var(--mono);font-size:10.5px;color:var(--mute);margin-top:9px;letter-spacing:.03em;line-height:1.6}
+.conn{
+  align-self:center;width:1px;height:44px;background:var(--gold);opacity:.55;
+  transform:scaleY(0);transform-origin:top;
+  transition:transform .9s var(--ease);
+  position:relative;
+}
+.conn::after{
+  content:"";position:absolute;left:50%;bottom:0;
+  width:5px;height:5px;margin-left:-2.5px;margin-bottom:-2px;
+  background:var(--gold);transform:rotate(45deg);
+  border-top:0;border-left:0;
+  clip-path:polygon(100% 0,100% 100%,0 100%);
+}
+.in .conn{transform:scaleY(1)}
+.in .conn.d2{transition-delay:.22s}
+@media(min-width:820px){
+  .diagram{flex-direction:row;align-items:stretch}
+  .node{flex:1}
+  .conn{width:auto;flex:0 0 56px;height:1px;align-self:center;transform:scaleX(0);transform-origin:left}
+  .conn::after{left:auto;right:0;top:50%;bottom:auto;margin:-2.5px 0 0 0;transform:rotate(-45deg)}
+  .in .conn{transform:scaleX(1)}
+}
+.note{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--mute);
+  border-left:1px solid var(--gold);padding-left:14px;margin-top:30px;line-height:1.7;
+}
+
+/* ---------- 04 activity ---------- */
+.tablehead{
+  display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;
+  justify-content:space-between;margin-bottom:20px;
+}
+.tablehead p{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--mute)}
+.tbl{width:100%;border-collapse:collapse;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.tbl thead th{
+  font-weight:400;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:#57534c;text-align:left;padding:0 10px 9px 0;
+  border-bottom:1px solid var(--rule);white-space:nowrap;
+}
+.tbl thead th:last-child{text-align:right;padding-right:0}
+.tbl tbody td{
+  font-size:11.5px;padding:8px 10px 8px 0;
+  border-bottom:1px solid #202020;color:#b8b2a7;
+  white-space:nowrap;line-height:1.5;
+}
+.tbl tbody td:last-child{text-align:right;padding-right:0}
+.tbl tbody tr:nth-child(even){background:var(--row)}
+.tbl tbody tr{transition:background .3s ease}
+.tbl tbody tr:hover{background:#1e1c18}
+.tbl tbody td:first-child{padding-left:8px;color:#6f6b64}
+.tbl tbody tr:nth-child(even) td:first-child{padding-left:8px}
+.amt{color:var(--gold)}
+.ty{color:#8d887f;letter-spacing:.05em}
+.hash{color:var(--mute);border-bottom:1px solid transparent;transition:color .3s ease,border-color .3s ease}
+.hash:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.empty td{color:var(--mute);text-align:center!important;padding:34px 0!important;letter-spacing:.14em;font-size:10.5px;text-transform:uppercase}
+.rowin{opacity:0;transform:translateY(6px);animation:rowin .6s var(--ease) forwards}
+@keyframes rowin{to{opacity:1;transform:none}}
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 calc(var(--pad) * -1);padding:0 var(--pad)}
+.scroller .tbl{min-width:520px}
+.tblfoot{
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  margin-top:14px;font-family:var(--mono);font-size:10px;
+  letter-spacing:.1em;text-transform:uppercase;color:#57534c;
+}
+@media(min-width:760px){
+  .tbl thead th{font-size:10px;padding-bottom:11px}
+  .tbl tbody td{font-size:12px;padding:9px 14px 9px 0}
+  .scroller .tbl{min-width:0}
+}
+
+/* ---------- 05 performance ---------- */
+.perf{display:grid;gap:34px;margin-top:8px}
+.panel{border-top:1px solid var(--rule);padding-top:18px}
+.panel h3{
+  font-family:var(--mono);font-size:10px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--mute);font-weight:400;margin:0 0 4px;
+}
+.stat{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  padding:13px 0;border-bottom:1px solid #202020;
+}
+.stat .l{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#6f6b64}
+.stat .r{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:15px;color:var(--gold);letter-spacing:-.01em}
+.stat .r.neg{color:var(--mute)}
+.spark{margin-top:20px;height:64px;width:100%;display:block}
+.spark path{fill:none;stroke:var(--gold);stroke-width:1;vector-effect:non-scaling-stroke}
+.spark .base{stroke:var(--rule)}
+.sparknote{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:#57534c;margin-top:8px}
+#pollNote{display:flex;align-items:center;gap:8px}
+.dot{width:5px;height:5px;border-radius:50%;background:#3a362f;flex:0 0 auto;transition:background .4s ease,box-shadow .4s ease}
+.dot.on{background:var(--gold);box-shadow:0 0 0 3px rgba(212,164,35,.14)}
+.dot.beat{animation:beat 1.1s var(--ease)}
+@keyframes beat{0%{box-shadow:0 0 0 0 rgba(212,164,35,.5)}100%{box-shadow:0 0 0 9px rgba(212,164,35,0)}}
+.flash{animation:flash 1.2s var(--ease)}
+@keyframes flash{0%{color:#EDEAE3}100%{color:var(--gold)}}
+@media(min-width:820px){.perf{grid-template-columns:1fr 1fr;gap:52px}}
+
+/* ---------- 06 pair ---------- */
+.pairgrid{display:grid;gap:30px;margin-top:6px}
+.facts{border-top:1px solid var(--rule)}
+.fact{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid #202020}
+.fact dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#6f6b64;margin:0}
+.fact dd{margin:0;font-family:var(--mono);font-size:11.5px;color:#b8b2a7;text-align:right;letter-spacing:.02em}
+@media(min-width:820px){.pairgrid{grid-template-columns:1.15fr 1fr;gap:60px;align-items:start}}
+
+/* ---------- 07 risk ---------- */
+.risk{background:#111}
+.risk .cols{display:grid;gap:26px;margin-top:8px}
+.risk p{font-size:14.5px;line-height:1.72;color:#8d887f;max-width:46ch}
+.risk p b{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);display:block;margin-bottom:9px;font-weight:400}
+@media(min-width:820px){.risk .cols{grid-template-columns:repeat(3,1fr);gap:40px}}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--rule);padding:40px 0 54px}
+.fgrid{display:flex;flex-direction:column;gap:22px}
+.fgrid .mark{font-size:20px}
+.flinks{display:flex;gap:22px;flex-wrap:wrap}
+.flinks a,.fmeta{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--mute);transition:color .35s ease}
+.flinks a:hover{color:var(--gold)}
+.disclaim{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:#4a463f;line-height:1.8;max-width:64ch}
+@media(min-width:760px){
+  .fgrid{flex-direction:row;justify-content:space-between;align-items:flex-start}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rv{opacity:1;transform:none}
+  .rvline{transform:scaleX(1)}
+  h1 .ln>span{transform:none}
+  .hero .sub,.hero .cta{opacity:1;transform:none}
+  .conn{transform:scale(1)!important}
+}
+</style>
+</head>
+
+<body>
+
+<header id="hdr">
+  <div class="wrap bar">
+    <a class="mark" href="#top" aria-label="ingot, home"><i aria-hidden="true"></i>ingot</a>
+    <nav aria-label="Primary">
+      <a href="#pair">the pair</a>
+      <a href="#route">the route</a>
+      <a href="#activity">activity</a>
+      <a href="#risk">risk</a>
+    </nav>
+    <button class="pill" id="ca" type="button"><b>CA</b><span id="caTxt">—</span></button>
+  </div>
+  <div id="prog"></div>
+</header>
+
+<main id="top">
+
+  <!-- 01 ................................................. HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker"><em aria-hidden="true"></em>ingot · paired with $gld</div>
+      <h1>
+        <span class="ln"><span>paired with gold.</span></span>
+        <span class="ln"><span>the fees come back as <em>metal</em>.</span></span>
+      </h1>
+      <p class="sub">A memecoin on Pons. Creator fees generated by trading are routed
+      to holders in $GLD — the SPDR Gold Shares token. Nothing is promised. Everything
+      that moves is written to the chain and printed below.</p>
+      <div class="cta">
+        <a class="btn g" href="#activity">see the routings</a>
+        <a class="btn" href="#route">how the route works</a>
+      </div>
+      <div class="ingotart rvline"></div>
+    </div>
+  </section>
+
+  <!-- 02 ................................................. LIVE STRIP -->
+  <section style="padding-top:0" aria-label="Live figures">
+    <div class="wrap">
+      <div class="strip rv">
+        <div class="cell">
+          <div class="k" id="kLast">gld last</div>
+          <div class="v" id="gldLast">—</div>
+          <div class="s" id="gldLastSrc">source — not configured</div>
+        </div>
+        <div class="cell">
+          <div class="k" id="k1d">gld 1d</div>
+          <div class="v" id="gld1d">—</div>
+          <div class="s" id="gld1dSrc">source — not configured</div>
+        </div>
+        <div class="cell">
+          <div class="k">ingot mcap</div>
+          <div class="v" id="mcap">—</div>
+          <div class="s" id="mcapSrc">source — not configured</div>
+        </div>
+        <div class="cell">
+          <div class="k">holders</div>
+          <div class="v" id="holders">—</div>
+          <div class="s" id="holdersSrc">source — not configured</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 ................................................. THE ROUTE -->
+  <section id="route">
+    <div class="wrap">
+      <div class="eyebrow rv"><span>03</span><span>the route</span></div>
+      <h2 class="rv">Three steps, and none of them<br>are held by us.</h2>
+
+      <div class="diagram rv">
+        <div class="node">
+          <div class="n">01</div>
+          <div class="t">trade on pons</div>
+          <div class="d">buys and sells of $ingot on the Pons bonding curve and market.</div>
+        </div>
+        <div class="conn" aria-hidden="true"></div>
+        <div class="node">
+          <div class="n">02</div>
+          <div class="t">creator fee</div>
+          <div class="d">Pons collects a fee on volume and credits it to the creator wallet.</div>
+        </div>
+        <div class="conn d2" aria-hidden="true"></div>
+        <div class="node">
+          <div class="n">03</div>
+          <div class="t">routed to holders in $gld</div>
+          <div class="d">the fee is swapped to $GLD and distributed. Each distribution is a transaction.</div>
+        </div>
+      </div>
+
+      <p class="lede rv">The creator-fee mechanism is a platform feature of Pons, not
+      something ingot invented, controls, or can guarantee. Pons pays the fee to the
+      creator wallet; ingot's chosen use of that fee is to convert it to $GLD and send
+      it back out to holders. If volume stops, the fee is zero and nothing is routed.
+      Read it in the <a href="https://docs.pons.fun" target="_blank" rel="noopener noreferrer">Pons documentation</a>.</p>
+
+      <p class="note rv">no deposits · no custody · no pool · the fee wallet only receives and sends</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- 04 ................................................. ACTIVITY -->
+  <section id="activity">
+    <div class="wrap">
+      <div class="eyebrow rv"><span>04</span><span>activity</span></div>
+      <h2 class="rv">The ledger.</h2>
+
+      <div class="tablehead rv" style="margin-top:22px">
+        <p>every row below is an onchain transaction. click any hash.</p>
+        <p class="mono" id="feeAddr">fee wallet — not configured</p>
+      </div>
+
+      <div class="scroller rv">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th scope="col">time</th>
+              <th scope="col">type</th>
+              <th scope="col">amount</th>
+              <th scope="col">tx</th>
+            </tr>
+          </thead>
+          <tbody id="rows">
+            <tr class="empty"><td colspan="4">no routings yet</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tblfoot rv">
+        <span id="rowsMeta">20 rows · newest first</span>
+        <span id="explLink"></span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- 05 ................................................. PERFORMANCE -->
+  <section id="performance">
+    <div class="wrap">
+      <div class="eyebrow rv"><span>05</span><span>performance</span></div>
+      <h2 class="rv">Figures, not feelings.</h2>
+      <p class="lede rv" style="margin-top:18px">Everything on this page is read live from
+      the chain and from the fund's price feed. Where a figure is not available it is
+      shown as an em dash. It is never estimated, filled in, or carried over.</p>
+
+      <div class="perf rv" style="margin-top:44px">
+
+        <div class="panel">
+          <h3 id="metalHead">the metal</h3>
+          <div class="sparknote" id="metalSrc" style="margin:0 0 6px">source — not configured</div>
+          <div class="stat"><span class="l">spot / troy oz</span><span class="r" id="mSpot">—</span></div>
+          <div class="stat"><span class="l">per gram</span><span class="r" id="mGram">—</span></div>
+          <div class="stat"><span class="l">1 week</span><span class="r" id="g1w">—</span></div>
+          <div class="stat"><span class="l">1 month</span><span class="r" id="g1m">—</span></div>
+          <div class="stat"><span class="l">3 months</span><span class="r" id="g3m">—</span></div>
+          <div class="stat"><span class="l">1 year</span><span class="r" id="g1y">—</span></div>
+          <div class="stat"><span class="l">52w range</span><span class="r" id="grange">—</span></div>
+          <div class="stat"><span class="l">from 52w high</span><span class="r" id="gdd">—</span></div>
+          <svg class="spark" id="spark" viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true">
+            <path class="base" d="M0 63 H300"></path>
+          </svg>
+          <div class="sparknote" id="sparknote">price series — not configured</div>
+        </div>
+
+        <div class="panel">
+          <h3>routing — the fees</h3>
+          <div class="stat"><span class="l">total routed</span><span class="r" id="pTotal">—</span></div>
+          <div class="stat"><span class="l">routings</span><span class="r" id="pCount">—</span></div>
+          <div class="stat"><span class="l">largest</span><span class="r" id="pMax">—</span></div>
+          <div class="stat"><span class="l">last routing</span><span class="r" id="pLast">—</span></div>
+          <div class="stat"><span class="l">chain</span><span class="r" id="pChain">—</span></div>
+          <div class="sparknote" style="margin-top:20px">computed from the fee wallet's own transaction history. a blank
+          figure means the wallet has no matching transactions, or the explorer did not answer.</div>
+          <div class="sparknote" id="pollNote" style="margin-top:14px">
+            <span class="dot" aria-hidden="true"></span><span id="pollTxt">idle</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- 06 ................................................. THE PAIR -->
+  <section id="pair">
+    <div class="wrap">
+      <div class="eyebrow rv"><span>06</span><span>the pair</span></div>
+
+      <div class="pairgrid">
+        <div class="rv">
+          <h2>$GLD is not a<br>picture of gold.</h2>
+          <p class="lede" style="margin-top:22px">SPDR Gold Shares is the largest physically
+          backed gold exchange-traded fund in the world. It holds allocated bullion —
+          numbered bars, assigned to the trust, not a claim on a pool — held in the London
+          vaults of its custodian. The share price tracks the metal, less expenses.</p>
+          <p class="lede" style="margin-top:16px">ingot routes its fees into that, on chain.
+          Read the fund's own material at
+          <a href="https://www.spdrgoldshares.com" target="_blank" rel="noopener noreferrer">spdrgoldshares.com</a>.</p>
+        </div>
+
+        <dl class="facts rv">
+          <div class="fact"><dt>fund</dt><dd>SPDR Gold Shares</dd></div>
+          <div class="fact"><dt>ticker</dt><dd class="mono">GLD</dd></div>
+          <div class="fact"><dt>backing</dt><dd>allocated physical bullion</dd></div>
+          <div class="fact"><dt>vault</dt><dd>London</dd></div>
+          <div class="fact"><dt>sponsor</dt><dd>World Gold Trust Services</dd></div>
+          <div class="fact"><dt id="factLbl">onchain price</dt><dd><span class="num" id="gldFact">—</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 ................................................. RISK -->
+  <section id="risk" class="risk">
+    <div class="wrap">
+      <div class="eyebrow rv"><span>07</span><span>risk</span></div>
+      <div class="cols rv">
+        <p><b>the asset</b>Memecoins routinely go to zero. $ingot is a memecoin. It has
+        no revenue, no floor, no redemption, and no obligation to anybody. The gold
+        pairing does not make it a gold product and does not protect the token's price.
+        Assume the entire position can be lost.</p>
+
+        <p><b>the fees</b>Fee routing depends entirely on trading volume. Volume is not
+        promised and is frequently zero. When there is no volume there is no fee, and
+        when there is no fee nothing is routed. Past routings shown above say nothing
+        about future ones. The mechanism is a Pons platform feature and may change or
+        stop outside our control.</p>
+
+        <p><b>the rest</b>Nothing here is investment advice, a solicitation, or an offer.
+        No deposits are taken. No funds are held or managed on anyone's behalf. Do your
+        own research, read the contract, and only ever risk what you can lose entirely.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="mark"><i aria-hidden="true"></i>ingot</div>
+        <div class="disclaim" style="margin-top:14px">paired with gold. the fees come back as metal.</div>
+      </div>
+      <div class="flinks" id="flinks">
+        <a href="#" id="xLink" target="_blank" rel="noopener noreferrer">x</a>
+        <a href="#" id="mailLink">contact</a>
+        <a href="https://docs.pons.fun" target="_blank" rel="noopener noreferrer">pons docs</a>
+        <a href="https://www.spdrgoldshares.com" target="_blank" rel="noopener noreferrer">gld</a>
+      </div>
+    </div>
+    <div class="disclaim" style="margin-top:34px">
+      not affiliated with State Street, SPDR, Robinhood or Pons. all marks belong to
+      their owners. figures on this page are read from public sources and are shown
+      as em dashes when unavailable.
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   CONFIG
+   ============================================================ */
+const CFG = { coinApi:"", gldApi:"", feeWallet:"", explorer:"https://robinhoodchain.blockscout.com" };
+
+/* page metadata — contract address, socials, contact */
+const META = { ca:"", x:"", contact:"" };
+
+/* Public gold reference feeds. Used ONLY while CFG.gldApi is empty, and every
+   figure they produce is labelled on the page with the feed it came from.
+   PAXG is one troy ounce of London Good Delivery gold — a reference for the
+   metal, not a quote for the $GLD token. Set CFG.gldApi to override. */
+const REF = {
+  on: true,
+  spot:  "https://api.gold-api.com/price/XAU",
+  quote: "https://api.coingecko.com/api/v3/simple/price?ids=pax-gold&vs_currencies=usd&include_24hr_change=true",
+  series:"https://api.coingecko.com/api/v3/coins/pax-gold/market_chart?vs_currency=usd&days=365&interval=daily"
+};
+
+const REFRESH_MS = 60000;
+const GRAMS_PER_TROY_OZ = 31.1034768;
+const DASH = "\u2014";
+
+/* ============================================================
+   helpers — nothing here ever invents a value
+   ============================================================ */
+const $ = (id) => document.getElementById(id);
+const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function isNum(v){ return typeof v === "number" && isFinite(v); }
+function toNum(v){
+  if (isNum(v)) return v;
+  if (typeof v === "string" && v.trim() !== "" && isFinite(Number(v))) return Number(v);
+  return null;
+}
+
+/* dig for the first numeric value at any of the given dot-paths */
+function pick(obj, paths){
+  for (const p of paths){
+    let cur = obj, ok = true;
+    for (const key of p.split(".")){
+      if (cur && typeof cur === "object" && key in cur) cur = cur[key];
+      else { ok = false; break; }
+    }
+    if (ok){ const n = toNum(cur); if (n !== null) return n; }
+  }
+  return null;
+}
+
+function usd(n, dp){
+  if (!isNum(n)) return DASH;
+  const d = dp === undefined ? (n < 1 ? 4 : 2) : dp;
+  return "$" + n.toLocaleString("en-US", { minimumFractionDigits:d, maximumFractionDigits:d });
+}
+function compact(n){
+  if (!isNum(n)) return DASH;
+  const a = Math.abs(n);
+  if (a >= 1e9) return "$" + (n/1e9).toFixed(2) + "B";
+  if (a >= 1e6) return "$" + (n/1e6).toFixed(2) + "M";
+  if (a >= 1e3) return "$" + (n/1e3).toFixed(1) + "K";
+  return usd(n, 2);
+}
+function pct(n){
+  if (!isNum(n)) return DASH;
+  return (n >= 0 ? "+" : "\u2212") + Math.abs(n).toFixed(2) + "%";
+}
+function int(n){
+  if (!isNum(n)) return DASH;
+  return Math.round(n).toLocaleString("en-US");
+}
+function stamp(d){
+  if (!(d instanceof Date) || isNaN(d)) return DASH;
+  const p = (x) => String(x).padStart(2, "0");
+  return p(d.getMonth()+1) + "-" + p(d.getDate()) + " " + p(d.getHours()) + ":" + p(d.getMinutes());
+}
+function ago(d){
+  if (!(d instanceof Date) || isNaN(d)) return DASH;
+  const s = (Date.now() - d.getTime()) / 1000;
+  if (s < 90) return "just now";
+  if (s < 3600) return Math.round(s/60) + "m ago";
+  if (s < 86400) return Math.round(s/3600) + "h ago";
+  return Math.round(s/86400) + "d ago";
+}
+function shortHash(h){
+  if (typeof h !== "string" || h.length < 14) return h || DASH;
+  return h.slice(0, 8) + "\u2026" + h.slice(-6);
+}
+function sameAddr(a, b){
+  return typeof a === "string" && typeof b === "string" && a.toLowerCase() === b.toLowerCase();
+}
+
+/* set a value cell. null/undefined always renders the em dash. */
+function put(id, text, negative){
+  const el = $(id);
+  if (!el) return;
+  el.textContent = (text === null || text === undefined || text === "") ? DASH : text;
+  el.classList.toggle("neg", !!negative);
+}
+function src(id, label){ const el = $(id); if (el) el.textContent = label; }
+
+/* count a real number up into place. never runs on a missing value.
+   only the first arrival animates; later refreshes just flash the new figure. */
+const ticked = new Set();
+function tick(id, value, format){
+  const el = $(id);
+  if (!el || !isNum(value)) return;
+  el.classList.remove("neg");
+  if (REDUCED || ticked.has(id)){
+    const changed = el.textContent !== format(value);
+    el.textContent = format(value);
+    if (changed && !REDUCED && ticked.has(id)){
+      el.classList.remove("flash");
+      void el.offsetWidth;
+      el.classList.add("flash");
+    }
+    ticked.add(id);
+    return;
+  }
+  ticked.add(id);
+  const dur = 1000, t0 = performance.now();
+  const step = (t) => {
+    const k = Math.min(1, (t - t0) / dur);
+    const e = 1 - Math.pow(1 - k, 4);
+    el.textContent = format(value * e);
+    if (k < 1) requestAnimationFrame(step);
+    else el.textContent = format(value);
+  };
+  requestAnimationFrame(step);
+}
+
+async function jget(url){
+  const ctl = new AbortController();
+  const t = setTimeout(() => ctl.abort(), 9000);
+  try {
+    const r = await fetch(url, { headers:{ accept:"application/json" }, signal: ctl.signal });
+    if (!r.ok) return null;
+    return await r.json();
+  } catch (e) {
+    return null;
+  } finally {
+    clearTimeout(t);
+  }
+}
+
+/* ============================================================
+   header — contract pill, scroll state, progress rule
+   ============================================================ */
+(function header(){
+  const pill = $("ca"), txt = $("caTxt");
+  if (META.ca){
+    txt.textContent = shortHash(META.ca);
+    pill.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(META.ca); }
+      catch (e) {
+        const ta = document.createElement("textarea");
+        ta.value = META.ca; ta.style.position = "fixed"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand("copy"); } catch (_){}
+        ta.remove();
+      }
+      pill.classList.add("ok");
+      txt.textContent = "copied";
+      setTimeout(() => { pill.classList.remove("ok"); txt.textContent = shortHash(META.ca); }, 1400);
+    });
+  } else {
+    pill.disabled = true;
+    pill.title = "contract address not published yet";
+  }
+
+  if (META.x) $("xLink").href = META.x; else $("xLink").remove();
+  if (META.contact) $("mailLink").href = "mailto:" + META.contact; else $("mailLink").remove();
+
+  if (CFG.explorer && CFG.feeWallet){
+    $("explLink").innerHTML = '<a class="hash" target="_blank" rel="noopener noreferrer" href="' +
+      CFG.explorer.replace(/\/$/, "") + "/address/" + CFG.feeWallet + '">view wallet on blockscout</a>';
+  } else {
+    $("explLink").textContent = "explorer " + DASH;
+  }
+
+  const hdr = $("hdr"), prog = $("prog");
+  let queued = false;
+  const onScroll = () => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY || 0;
+      hdr.classList.toggle("stuck", y > 12);
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      prog.style.width = (h > 0 ? Math.min(100, (y / h) * 100) : 0) + "%";
+      queued = false;
+    });
+  };
+  window.addEventListener("scroll", onScroll, { passive:true });
+  onScroll();
+})();
+
+/* ============================================================
+   reveal on scroll
+   ============================================================ */
+(function reveal(){
+  const items = document.querySelectorAll(".rv, .rvline");
+  if (!("IntersectionObserver" in window) || REDUCED){
+    items.forEach(el => el.classList.add("in"));
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en, i) => {
+      if (!en.isIntersecting) return;
+      const el = en.target;
+      setTimeout(() => el.classList.add("in"), i * 70);
+      io.unobserve(el);
+    });
+  }, { rootMargin:"0px 0px -8% 0px", threshold:0.12 });
+  items.forEach(el => io.observe(el));
+})();
+
+requestAnimationFrame(() => document.body.classList.add("ready"));
+
+/* ============================================================
+   $GLD — price, change, series
+   ============================================================ */
+async function loadGld(){
+  if (!CFG.gldApi) return loadReference();
+
+  const data = await jget(CFG.gldApi);
+  if (!data) { src("gldLastSrc", "source " + DASH + " no response"); src("gld1dSrc", "source " + DASH + " no response"); return; }
+
+  const last = pick(data, [
+    "price","last","lastPrice","close","usd","priceUsd","price_usd",
+    "data.price","data.last","data.priceUsd","result.price","quote.USD.price"
+  ]);
+  const chg = pick(data, [
+    "change24h","changePercent24Hr","priceChangePercent","percentChange24h","change_1d",
+    "data.change24h","data.priceChange24h","quote.USD.percent_change_24h"
+  ]);
+
+  if (isNum(last)){
+    tick("gldLast", last, (v) => usd(v, 2));
+    put("gldFact", usd(last, 2));
+    src("gldLastSrc", "source \u00b7 gld feed \u00b7 " + stamp(new Date()));
+  } else {
+    src("gldLastSrc", "source " + DASH + " no price in response");
+  }
+
+  if (isNum(chg)){
+    put("gld1d", pct(chg), chg < 0);
+    src("gld1dSrc", "source \u00b7 gld feed \u00b7 24h");
+  } else {
+    src("gld1dSrc", "source " + DASH + " no change in response");
+  }
+
+  /* series -> sparkline + 1m / 3m / 1y, only if the feed actually returns one */
+  const raw = data.series || data.prices || data.history || data.candles ||
+              (data.data && (data.data.series || data.data.prices)) || null;
+  const pts = normaliseSeries(raw);
+  if (pts.length > 1){
+    drawSpark(pts);
+    const lastP = pts[pts.length - 1].v;
+    put("g1m", pct(changeOver(pts, 30)),  changeOver(pts, 30)  < 0);
+    put("g3m", pct(changeOver(pts, 90)),  changeOver(pts, 90)  < 0);
+    put("g1y", pct(changeOver(pts, 365)), changeOver(pts, 365) < 0);
+    const win = pts.filter(p => p.t >= Date.now() - 365*864e5);
+    if (win.length > 1){
+      const lo = Math.min.apply(null, win.map(p => p.v));
+      const hi = Math.max.apply(null, win.map(p => p.v));
+      put("grange", usd(lo, 2) + " \u2013 " + usd(hi, 2));
+    }
+    $("sparknote").textContent = pts.length + " points \u00b7 last " + usd(lastP, 2);
+  } else {
+    $("sparknote").textContent = "price series " + DASH + " not returned by feed";
+  }
+}
+
+/* ------------------------------------------------------------
+   reference gold feeds — only while CFG.gldApi is empty.
+   the cell labels change with the source so no figure is ever
+   presented as something it is not.
+   ------------------------------------------------------------ */
+async function loadReference(){
+  if (!REF.on) return;
+
+  $("kLast").textContent = "gold / oz";
+  $("k1d").textContent = "gold 1d";
+  $("metalHead").textContent = "the metal \u00b7 reference";
+  $("factLbl").textContent = "gold reference";
+  $("metalSrc").textContent = "reference only \u00b7 not a $gld quote \u00b7 set gldApi to replace";
+
+  const [q, spot] = await Promise.all([ jget(REF.quote), jget(REF.spot) ]);
+
+  const px  = q && q["pax-gold"] ? toNum(q["pax-gold"].usd) : null;
+  const chg = q && q["pax-gold"] ? toNum(q["pax-gold"].usd_24h_change) : null;
+
+  if (isNum(px)){
+    tick("gldLast", px, (v) => usd(v, 2));
+    put("gldFact", usd(px, 2));
+    src("gldLastSrc", "coingecko \u00b7 paxg \u00b7 1 troy oz");
+  } else {
+    src("gldLastSrc", "coingecko " + DASH + " no response");
+  }
+
+  if (isNum(chg)){
+    put("gld1d", pct(chg), chg < 0);
+    src("gld1dSrc", "coingecko \u00b7 paxg \u00b7 24h");
+  } else {
+    src("gld1dSrc", "coingecko " + DASH + " no response");
+  }
+
+  const sp = spot ? toNum(spot.price) : null;
+  if (isNum(sp)){
+    tick("mSpot", sp, (v) => usd(v, 2));
+    tick("mGram", sp / GRAMS_PER_TROY_OZ, (v) => usd(v, 2));
+  }
+
+  const chart = await jget(REF.series);
+  const pts = normaliseSeries(chart && chart.prices);
+  if (pts.length > 1){
+    drawSpark(pts);
+    const last = pts[pts.length - 1].v;
+    const c1w = changeOver(pts, 7), c1m = changeOver(pts, 30);
+    const c3m = changeOver(pts, 90), c1y = changeOver(pts, 365);
+    put("g1w", pct(c1w), isNum(c1w) && c1w < 0);
+    put("g1m", pct(c1m), isNum(c1m) && c1m < 0);
+    put("g3m", pct(c3m), isNum(c3m) && c3m < 0);
+    put("g1y", pct(c1y), isNum(c1y) && c1y < 0);
+
+    const vs = pts.map(p => p.v);
+    const lo = Math.min.apply(null, vs), hi = Math.max.apply(null, vs);
+    put("grange", usd(lo, 0) + " \u2013 " + usd(hi, 0));
+    const dd = ((last - hi) / hi) * 100;
+    put("gdd", pct(dd), dd < 0);
+
+    $("sparknote").textContent = pts.length + " daily closes \u00b7 coingecko \u00b7 paxg/usd";
+  } else {
+    $("sparknote").textContent = "price series " + DASH + " no response";
+  }
+}
+
+/* accepts [[ms,price],...] or [{t|time|date, v|price|close},...] */
+function normaliseSeries(raw){
+  if (!Array.isArray(raw)) return [];
+  const out = [];
+  for (const row of raw){
+    let t = null, v = null;
+    if (Array.isArray(row) && row.length >= 2){
+      t = toNum(row[0]); v = toNum(row[1]);
+    } else if (row && typeof row === "object"){
+      t = toNum(row.t) ?? toNum(row.time) ?? toNum(row.timestamp) ??
+          (row.date ? Date.parse(row.date) : null);
+      v = toNum(row.v) ?? toNum(row.price) ?? toNum(row.close) ?? toNum(row.c);
+    }
+    if (isNum(t) && isNum(v)){
+      if (t < 1e11) t *= 1000;           /* seconds -> ms */
+      out.push({ t, v });
+    }
+  }
+  return out.sort((a, b) => a.t - b.t);
+}
+
+function changeOver(pts, days){
+  if (pts.length < 2) return null;
+  const target = Date.now() - days * 864e5;
+  const span = (pts[pts.length - 1].t - pts[0].t) / 864e5;
+  if (span < days - 5) return null;       /* series does not reach back that far */
+  let base = pts[0];
+  for (const p of pts){ if (p.t <= target) base = p; else break; }
+  const last = pts[pts.length - 1].v;
+  if (!isNum(base.v) || base.v === 0) return null;
+  return ((last - base.v) / base.v) * 100;
+}
+
+function drawSpark(pts){
+  const svg = $("spark");
+  svg.querySelectorAll("path:not(.base)").forEach(p => p.remove());
+  const W = 300, H = 64, pad = 3;
+  const vs = pts.map(p => p.v);
+  const lo = Math.min.apply(null, vs), hi = Math.max.apply(null, vs);
+  const span = (hi - lo) || 1;
+  const d = pts.map((p, i) => {
+    const x = (i / (pts.length - 1)) * W;
+    const y = H - pad - ((p.v - lo) / span) * (H - pad * 2);
+    return (i ? "L" : "M") + x.toFixed(2) + " " + y.toFixed(2);
+  }).join(" ");
+
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("d", d);
+  svg.appendChild(path);
+
+  if (!REDUCED && !drawSpark.drawn){
+    drawSpark.drawn = true;
+    const len = path.getTotalLength();
+    path.style.strokeDasharray = len;
+    path.style.strokeDashoffset = len;
+    path.style.transition = "stroke-dashoffset 2.2s cubic-bezier(.16,1,.3,1)";
+    requestAnimationFrame(() => { path.style.strokeDashoffset = "0"; });
+  }
+}
+
+/* ============================================================
+   $INGOT — market cap, holders
+   ============================================================ */
+async function loadCoin(){
+  if (!CFG.coinApi) return;
+
+  const data = await jget(CFG.coinApi);
+  if (!data){ src("mcapSrc", "source " + DASH + " no response"); src("holdersSrc", "source " + DASH + " no response"); return; }
+
+  const mc = pick(data, [
+    "marketCap","market_cap","mcap","marketCapUsd","usd_market_cap","fdv",
+    "data.marketCap","data.market_cap","data.usd_market_cap","market_data.market_cap.usd"
+  ]);
+  const hd = pick(data, [
+    "holders","holderCount","holder_count","holders_count",
+    "data.holders","data.holderCount","stats.holders"
+  ]);
+
+  if (isNum(mc)){ tick("mcap", mc, compact); src("mcapSrc", "source \u00b7 pons \u00b7 " + stamp(new Date())); }
+  else src("mcapSrc", "source " + DASH + " no market cap in response");
+
+  if (isNum(hd)){ tick("holders", hd, int); src("holdersSrc", "source \u00b7 pons \u00b7 " + stamp(new Date())); }
+  else src("holdersSrc", "source " + DASH + " no holder count in response");
+}
+
+/* ============================================================
+   ACTIVITY — real fee-routing transactions from Blockscout
+   ============================================================ */
+const LIMIT = 20;
+
+function emptyRow(text){
+  $("rows").innerHTML = '<tr class="empty"><td colspan="4">' + text + "</td></tr>";
+}
+
+async function loadActivity(){
+  const base = (CFG.explorer || "").replace(/\/$/, "");
+  const w = CFG.feeWallet;
+
+  if (!base || !w){
+    $("feeAddr").textContent = "fee wallet " + DASH + " not configured";
+    emptyRow("no routings yet");
+    return;
+  }
+  $("feeAddr").textContent = "fee wallet \u00b7 " + shortHash(w);
+
+  /* token transfers first — a routing is a token movement — then plain txs */
+  let items = [];
+  const tt = await jget(base + "/api/v2/addresses/" + w + "/token-transfers?type=ERC-20");
+  if (tt && Array.isArray(tt.items)) items = tt.items.map(t => mapTransfer(t, w));
+
+  if (!items.length){
+    const tx = await jget(base + "/api/v2/addresses/" + w + "/transactions");
+    if (tx && Array.isArray(tx.items)) items = tx.items.map(t => mapTx(t, w));
+  }
+
+  items = items.filter(Boolean).sort((a, b) => b.ts - a.ts);
+
+  if (!items.length){ emptyRow("no routings yet"); markPerf([]); return; }
+
+  render(items.slice(0, LIMIT), base);
+  markPerf(items);
+}
+
+function mapTransfer(t, wallet){
+  const hash = t.transaction_hash || t.tx_hash || t.hash;
+  if (!hash) return null;
+
+  const iso = t.timestamp || t.block_timestamp;
+  const ts = iso ? Date.parse(iso) : NaN;
+
+  const tok = t.token || {};
+  const dec = Number(tok.decimals != null ? tok.decimals : (t.total && t.total.decimals)) || 0;
+  const rawV = (t.total && t.total.value) != null ? t.total.value : t.value;
+  let amount = null;
+  if (rawV != null && isFinite(Number(rawV))) amount = Number(rawV) / Math.pow(10, dec);
+
+  const from = (t.from && t.from.hash) || t.from_address_hash;
+  const out = sameAddr(from, wallet);
+
+  return {
+    ts: isFinite(ts) ? ts : 0,
+    hash,
+    out,
+    type: out ? "routed \u00b7 " + (tok.symbol || "token") : "fee in \u00b7 " + (tok.symbol || "token"),
+    symbol: tok.symbol || "",
+    amount
+  };
+}
+
+function mapTx(t, wallet){
+  const hash = t.hash;
+  if (!hash) return null;
+  const ts = t.timestamp ? Date.parse(t.timestamp) : NaN;
+  const from = (t.from && t.from.hash) || t.from_address_hash;
+  const out = sameAddr(from, wallet);
+  let amount = null;
+  if (t.value != null && isFinite(Number(t.value))) amount = Number(t.value) / 1e18;
+
+  return {
+    ts: isFinite(ts) ? ts : 0,
+    hash,
+    out,
+    type: (t.method ? String(t.method) : (out ? "routed" : "fee in")).toLowerCase(),
+    symbol: "",
+    amount
+  };
+}
+
+function render(list, base){
+  const body = $("rows");
+  body.innerHTML = "";
+
+  list.forEach((r, i) => {
+    const d = r.ts ? new Date(r.ts) : null;
+    const tr = document.createElement("tr");
+    if (!REDUCED){ tr.className = "rowin"; tr.style.animationDelay = Math.min(i * 34, 700) + "ms"; }
+
+    const amountTxt = isNum(r.amount)
+      ? r.amount.toLocaleString("en-US", { maximumFractionDigits: r.amount < 1 ? 6 : 4 }) +
+        (r.symbol ? " " + r.symbol : "")
+      : DASH;
+
+    tr.innerHTML =
+      '<td title="' + (d ? d.toISOString() : "") + '">' + (d ? stamp(d) : DASH) + "</td>" +
+      '<td class="ty">' + r.type + "</td>" +
+      '<td class="amt">' + amountTxt + "</td>" +
+      '<td><a class="hash" target="_blank" rel="noopener noreferrer" href="' +
+        base + "/tx/" + r.hash + '">' + shortHash(r.hash) + "</a></td>";
+
+    body.appendChild(tr);
+  });
+
+  const newest = list[0] && list[0].ts ? new Date(list[0].ts) : null;
+  $("rowsMeta").textContent = list.length + " rows \u00b7 newest first" + (newest ? " \u00b7 last " + ago(newest) : "");
+}
+
+/* performance panel, computed only from transactions the explorer actually returned */
+function markPerf(items){
+  const outs = items.filter(r => r.out && isNum(r.amount));
+  if (!outs.length) return;
+
+  const sym = outs[0].symbol || "";
+  const total = outs.reduce((a, r) => a + r.amount, 0);
+  const max = Math.max.apply(null, outs.map(r => r.amount));
+  const fmt = (v) => v.toLocaleString("en-US", { maximumFractionDigits:4 }) + (sym ? " " + sym : "");
+
+  tick("pTotal", total, fmt);
+  tick("pCount", outs.length, int);
+  put("pMax", fmt(max));
+  const newest = outs.map(r => r.ts).filter(Boolean).sort((a, b) => b - a)[0];
+  if (newest) put("pLast", ago(new Date(newest)));
+}
+
+/* ============================================================
+   live loop — poll every 60s, pause while the tab is hidden
+   ============================================================ */
+(function chain(){
+  try {
+    const host = new URL(CFG.explorer).hostname.split(".")[0];
+    put("pChain", host.replace(/chain$/, " chain"));
+  } catch (e) { /* leaves the em dash in place */ }
+})();
+
+let lastOk = null, timer = null;
+
+function pollNote(){
+  const txt = $("pollTxt"), dot = document.querySelector("#pollNote .dot");
+  if (!txt) return;
+  if (!lastOk){ txt.textContent = "no source reachable"; dot.classList.remove("on"); return; }
+  dot.classList.add("on");
+  txt.textContent = "live \u00b7 updated " + ago(lastOk) + " \u00b7 every " + (REFRESH_MS / 1000) + "s";
+}
+
+async function refresh(){
+  const before = ticked.size;
+  await Promise.all([ loadGld(), loadCoin(), loadActivity() ]);
+  if (ticked.size > 0 || before > 0){
+    lastOk = new Date();
+    const dot = document.querySelector("#pollNote .dot");
+    if (dot && !REDUCED){ dot.classList.remove("beat"); void dot.offsetWidth; dot.classList.add("beat"); }
+  }
+  pollNote();
+}
+
+function schedule(){
+  clearInterval(timer);
+  if (!document.hidden) timer = setInterval(refresh, REFRESH_MS);
+}
+document.addEventListener("visibilitychange", () => {
+  schedule();
+  if (!document.hidden) refresh();
+});
+
+setInterval(pollNote, 5000);
+refresh();
+schedule();
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+*.tmp
+_*.js
+.DS_Store
+Thumbs.db
